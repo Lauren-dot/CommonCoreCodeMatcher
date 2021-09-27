@@ -12,6 +12,7 @@ from bs4 import BeautifulSoup
   
 ELAcodes = "https://www.cde.ca.gov/be/st/ss/documents/finalelaccssstandards.pdf"
 raw_results = requests.get(ELAcodes)
+#Note: If raw_results did not return anything, check the Common Core PDF for changes, including shifts in the standards
   
 soup = BeautifulSoup(raw_results.content, 'html5lib') # If this line causes an error, run 'pip install html5lib' or install html5lib
 print(soup.prettify())
