@@ -11,7 +11,9 @@ def reading_code_match(assignment):
         print(code_match)
         return(code_match)
     if assignment == "read":
-
+        code_match = "CCSS.ELA-LITERACY.RL.5.5" #to be changed
+        print(code_match)
+        return(code_match)
     else:
         print("I am sorry; you will have to match that up by hand.")
 
